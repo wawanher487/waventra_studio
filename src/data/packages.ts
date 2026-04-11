@@ -13,8 +13,8 @@ export interface PortfolioItem {
   id: string;
   category: string;
   aspectRatio: "portrait" | "landscape" | "square";
-  // Nanti diisi URL foto asli dari teman kamu
-  placeholder: string; // warna sementara sebelum ada foto
+  url?: string; // jika ada paki gambar
+  placeholder?: string; // jika tidak ada url pakai warna
 }
 
 // ========================
@@ -73,47 +73,124 @@ export const packages: Package[] = [
 // DATA PORTFOLIO
 // ========================
 export const portfolioItems: PortfolioItem[] = [
+  // Wedding
   {
-    id: "1",
+    id: "w1",
     category: "Wedding",
     aspectRatio: "portrait",
-    placeholder: "#2C3E50",
+    url: "/portfolio/wedding1.jpg",
   },
   {
-    id: "2",
+    id: "w2",
+    category: "Wedding",
+    aspectRatio: "landscape",
+    url: "/portfolio/wedding2.jpg",
+  },
+  {
+    id: "w3",
+    category: "Wedding",
+    aspectRatio: "square",
+    url: "/portfolio/wedding3.jpg",
+  },
+  {
+    id: "w4",
+    category: "Wedding",
+    aspectRatio: "portrait",
+    url: "/portfolio/wedding5.jpg",
+  },
+  {
+    id: "w2",
+    category: "Wedding",
+    aspectRatio: "landscape",
+    url: "/portfolio/wedding2.jpg",
+  },
+  // Pre-Wedding
+  {
+    id: "pw1",
     category: "Pre-Wedding",
     aspectRatio: "landscape",
+    placeholder: "#3a2a1a",
+  },
+  {
+    id: "pw2",
+    category: "Pre-Wedding",
+    aspectRatio: "portrait",
+    placeholder: "#4a3520",
+  },
+  {
+    id: "pw3",
+    category: "Pre-Wedding",
+    aspectRatio: "square",
+    placeholder: "#3d2b18",
+  },
+  // Wisuda
+  {
+    id: "wis1",
+    category: "Wisuda",
+    aspectRatio: "portrait",
     placeholder: "#1A1A1A",
   },
   {
-    id: "3",
+    id: "wis2",
     category: "Wisuda",
-    aspectRatio: "portrait",
-    placeholder: "#3d3d3d",
+    aspectRatio: "landscape",
+    placeholder: "#2a2a2a",
   },
   {
-    id: "4",
+    id: "wis3",
+    category: "Wisuda",
+    aspectRatio: "square",
+    placeholder: "#222",
+  },
+  // Event
+  {
+    id: "e1",
     category: "Event",
     aspectRatio: "landscape",
     placeholder: "#4a3728",
   },
   {
-    id: "5",
-    category: "Portrait",
-    aspectRatio: "square",
-    placeholder: "#2C3E50",
+    id: "e2",
+    category: "Event",
+    aspectRatio: "portrait",
+    placeholder: "#3d2e22",
   },
   {
-    id: "6",
-    category: "Produk",
+    id: "e3",
+    category: "Event",
+    aspectRatio: "square",
+    placeholder: "#45342a",
+  },
+  // Portrait
+  {
+    id: "p1",
+    category: "Portrait",
     aspectRatio: "portrait",
+    placeholder: "#333",
+  },
+  {
+    id: "p2",
+    category: "Portrait",
+    aspectRatio: "square",
+    placeholder: "#3a3a3a",
+  },
+  {
+    id: "p3",
+    category: "Portrait",
+    aspectRatio: "landscape",
+    placeholder: "#2d2d2d",
+  },
+  // Produk
+  {
+    id: "pr1",
+    category: "Produk",
+    aspectRatio: "square",
     placeholder: "#1A1A1A",
   },
   {
-    id: "7",
-    category: "Wedding",
+    id: "pr2",
+    category: "Produk",
     aspectRatio: "landscape",
-    placeholder: "#3a2a1a",
+    placeholder: "#252525",
   },
-  { id: "8", category: "Wisuda", aspectRatio: "square", placeholder: "#333" },
 ];
