@@ -5,7 +5,7 @@ import { useState } from "react";
 const packages = [
   { id: "essential", name: "Essential", desc: "2 jam sesi" },
   { id: "signature", name: "Signature", desc: "Full Day + Video" },
-  { id: "couture", name: "Essential", desc: "Custom Konsep" },
+  { id: "couture", name: "Couture", desc: "Custom Konsep" },
 ];
 
 const eventTypes = [

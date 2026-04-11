@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { label: "Portofolio", href: "#portofolio" },
+  { label: "Portofolio", href: "#portfolio" },
   { label: "Packages", href: "#packages" },
   { label: "Tim", href: "#tim" },
   { label: "Kontak", href: "#kontak" },
@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-brand-navy/95 backdrop-blur-sm shadow-lg" : "bg-brand-primary"}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-brand-navy/90 backdrop-blur-sm shadow-lg" : "bg-brand-primary"}`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
