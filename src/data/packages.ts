@@ -99,7 +99,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "/portfolio/wedding5.jpg",
   },
   {
-    id: "w2",
+    id: "w5",
     category: "Wedding",
     aspectRatio: "landscape",
     url: "/portfolio/wedding2.jpg",
