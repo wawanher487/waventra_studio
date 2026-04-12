@@ -38,7 +38,7 @@ export default function TeamSection() {
             </p>
           </div>
           <a
-            href="#booking"
+            href="/"
             className="
               shrink-0 px-8 py-3.5
               bg-brand-primary text-white

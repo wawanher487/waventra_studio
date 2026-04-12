@@ -110,7 +110,7 @@ export default function PackagesSection() {
 
               {/* CTA Button */}
               <a
-                href="#booking"
+                href="/"
                 className={`
                   mt-8 block text-center py-3.5 text-sm font-semibold
                   tracking-[0.12em] uppercase rounded-sm
