@@ -14,16 +14,16 @@ type GridSpan = {
 };
 
 const LAYOUT_PATTERNS: GridSpan[] = [
-  { colSpan: "span-2", aspectRatio: "aspect-[16/7]" },
+  // { colSpan: "span-2", aspectRatio: "aspect-[16/7]" },
   { rowSpan: "span-2", aspectRatio: "" },
   { aspectRatio: "aspect-square" },
   { aspectRatio: "aspect-square" },
-  { colSpan: "span-2", aspectRatio: "aspect-video" },
+  // { colSpan: "span-2", aspectRatio: "aspect-video" },
   { aspectRatio: "aspect-[3/4]" },
   { aspectRatio: "aspect-square" },
   { aspectRatio: "aspect-square" },
   { aspectRatio: "aspect-square" },
-  { colSpan: "span-2", aspectRatio: "aspect-video" },
+  // { colSpan: "span-2", aspectRatio: "aspect-video" },
 ];
 
 // ─── Distribusi stabil (ANTI HYDRATION BUG) ─────────────────────
@@ -63,7 +63,7 @@ export default function PortfolioSection() {
   const [currentPage, setCurrentPage] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // ✅ FIX: pindahin ke dalam component
+  //  FIX: pindahin ke dalam component
   const categories = useMemo(() => {
     return ["Semua", ...new Set(portfolioItems.map((i) => i.category))];
   }, []);

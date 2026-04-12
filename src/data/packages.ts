@@ -194,3 +194,44 @@ export const portfolioItems: PortfolioItem[] = [
     placeholder: "#252525",
   },
 ];
+
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  speciality: string[];
+  sessionCount: string; // "50+ sesi" — string bukan number karena ada "+"
+  initials: string; // fallback kalau tidak ada foto
+  url?: string; // foto profil opsional
+}
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: "member-1",
+    name: "Nama Teman A", // ← ganti dengan nama asli
+    role: "Lead Photographer",
+    speciality: ["Wedding", "Pre-Wedding", "Portrait"],
+    sessionCount: "50+",
+    initials: "TA",
+    url: "/team/avatar.png",
+    // url: "/team/member-a.jpg" // uncomment kalau sudah ada foto
+  },
+  {
+    id: "member-2",
+    name: "Nama Teman B",
+    role: "Photographer",
+    speciality: ["Event", "Wisuda", "Portrait"],
+    sessionCount: "10+",
+    initials: "TB",
+    url: "/team/r.png",
+  },
+  {
+    id: "member-3",
+    name: "Nama Teman C",
+    role: "Videographer",
+    speciality: ["Wedding", "Event", "Konten Produk"],
+    sessionCount: "10+",
+    initials: "TC",
+    url: "/team/elon.jpg",
+  },
+];

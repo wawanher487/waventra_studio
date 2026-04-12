@@ -132,7 +132,8 @@ export default function PackagesSection() {
         <p className="text-center text-xs text-brand-primary/40 mt-10">
           Butuh paket custom?{" "}
           <a
-            href="#booking"
+            href="https://wa.me/6281928897858"
+            target="_blank"
             className="text-brand-gold underline underline-offset-2"
           >
             Hubungi kami
