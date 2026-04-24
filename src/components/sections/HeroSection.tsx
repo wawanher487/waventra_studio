@@ -90,9 +90,9 @@ export default function HeroSection() {
   const getFieldError = (field: string) => fieldErrors[field]?.[0];
 
   return (
-    <section className="min-h-screen pt-16 lg:pt-20 flex flex-col lg:flex-row">
+    <section className="min-h-screen pt-16 lg:pt-10 flex flex-col lg:flex-row">
       {/* LEFT — sama seperti sebelumnya */}
-      <div className="lg:w-1/2 bg-brand-primary px-8 lg:px-16 py-16 lg:py-24 flex flex-col justify-center relative overflow-hidden">
+      <div className="lg:w-1/2 bg-brand-primary px-8 lg:px-16 py-16 lg:py-20 flex flex-col justify-center relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -121,7 +121,7 @@ export default function HeroSection() {
               Artistik.
             </span>
           </h1>
-          <div className="space-y-6">
+          {/* <div className="space-y-6">
             {[
               {
                 title: "Visi Kurasi",
@@ -145,7 +145,7 @@ export default function HeroSection() {
                 </p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
 
