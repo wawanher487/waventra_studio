@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Noto_Serif } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 
 const manrope = Manrope({
   variable: "--font-sans",
@@ -22,19 +20,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${notoSerif.variable} fonst-sans bg-brand-neutral antialiased`}
+      className={`${manrope.variable} ${notoSerif.variable} font-sans bg-brand-neutral antialiased`}
     >
-      <body>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

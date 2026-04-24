@@ -45,7 +45,7 @@ function formatWhatsAppMessage(data: BookingData): string {
 
   // Template literal yang rapi dan mudah dibaca di WhatsApp
   return `
-🎯 *BOOKING BARU — LensStudio*
+🎯 *BOOKING BARU — WaventraStudio*
 
 👤 *Nama:* ${data.name}
 📱 *WhatsApp:* ${data.phone}
